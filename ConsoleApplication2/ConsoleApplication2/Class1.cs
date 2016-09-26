@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-    class Class1
+    class Element<T>
     {
+        private T data;
+        public T Data
+        {
+            get { return data; }
+            set { data = value; }
+        }
+        private Element<T> next;
+        internal Element<T> Next
+        {
+            get { return next; }
+            set { next = value; }
+        }
     }
 }
