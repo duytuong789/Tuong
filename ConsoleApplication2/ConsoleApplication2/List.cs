@@ -8,19 +8,19 @@ namespace ConsoleApplication2
 {
     class List<T>
     {
-        Element<T> head;
+        Element<T> head1;
 
         internal Element<T> Head
         {
-            get { return head; }
-            set { head = value; }
+            get { return head1; }
+            set { head1 = value; }
         }
         public List()
         {}
         public void addfirst(Element<T> e)
         {
-            e.Next = head;
-            this.head = e;
+            e.Next = head1;
+            this.head1 = e;
         }
     }
 }
